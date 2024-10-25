@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+        <link rel="icon" href="images\icon-red.png" type="image/png">
+        <title>Top 3</title>
+    </head>
+
+    <body>
+        <button id="home" type="button" class="btn btn-danger">homepage</button>
+        <div class="externo" >
+            <div> <!-- title -->
+                <img src="images\pochaco-likes.png" alt="pochaco with one ear up" id="pochaco_likes">
+                <h1 id="title" class="intro-title">My top 3...</h1>
+            </div>
+
+            <div class="rows"> <!-- first row -->
+                <div>
+                    <button id="colors" type="button" class="btn btn-outline-danger btn-lg">Colors</button>
+                    <ol id="b1" class="lists">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+
+                <div>
+                    <button id="smells" type="button" class="btn btn-outline-danger btn-lg">Smells</button>
+                    <ol id="b2" class="lists">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+
+                <div>
+                    <button id="foods" type="button" class="btn btn-outline-danger btn-lg">Foods</button>
+                    <ol id="b3" class="lists">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+
+            </div>
+
+            <div class="rows"> <!-- second row -->
+
+                <div>
+                    <button id="drinks" type="button" class="btn btn-outline-danger btn-lg">Drinks</button>
+                    <ol id="b4" class="lists">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+
+                <div>
+                    <button id="hobbies" type="button" class="btn btn-outline-danger btn-lg">Hobbies</button>
+                    <ol id="b5" class="lists">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+
+                <div>
+                    <button id="sports" type="button" class="btn btn-outline-danger btn-lg">Sports</button>
+                    <ol id="b6" class="lists">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function() {
+                let home = document.querySelector('#home');
+                home.addEventListener('click', function () {
+                    window.location.href = 'index.html';
+                });
+
+                let isActionOneColors = true;
+                let isActionOneSmells = true;
+                let isActionOneFoods = true;
+                let isActionOneDrinks = true;
+                let isActionOneHobbies = true;
+                let isActionOneSports = true;
+
+                let colors = document.querySelector('#colors');
+                colors.addEventListener('click', function () {
+                    let b1 = document.querySelectorAll('#b1 li');
+                    let itens = ['𑁯໋ light yellow', '𑁯໋ light blue', '𑁯໋ black'];
+                    b1.forEach(function(item,index) {
+                        if (isActionOneColors) {
+                            item.innerHTML = itens[index];
+                        } else {
+                            item.innerHTML = '';
+                        }
+                    });
+
+                    isActionOneColors = !isActionOneColors;
+
+                });
+
+
+                let smells = document.querySelector('#smells');
+                smells.addEventListener('click', function () {
+                    let b2 = document.querySelectorAll('#b2 li');
+                    let itens = ['𑁯໋ strawberry waffer', '𑁯໋ baby cologne', '𑁯໋ rain'];
+                    b2.forEach(function(item,index) {
+                        if (isActionOneSmells) {
+                            item.innerHTML = itens[index];
+                        } else {
+                            item.innerHTML = '';
+                        }
+                    });
+
+                    isActionOneSmells = !isActionOneSmells;
+
+                });
+
+                let foods = document.querySelector('#foods');
+                foods.addEventListener('click', function () {
+                    let b3 = document.querySelectorAll('#b3 li');
+                    let itens = ['𑁯໋ popcorn', '𑁯໋ cream cheese', '𑁯໋ ice cream'];
+                    b3.forEach(function(item,index) {
+                        if (isActionOneFoods) {
+                            item.innerHTML = itens[index];
+                        } else {
+                            item.innerHTML = '';
+                        }
+                    });
+
+                    isActionOneFoods = !isActionOneFoods;
+
+                });
+
+                let drinks = document.querySelector('#drinks');
+                drinks.addEventListener('click', function () {
+                    let b4 = document.querySelectorAll('#b4 li');
+                    let itens = ['𑁯໋ orange juice', '𑁯໋ lemon juice', '𑁯໋ water'];
+                    b4.forEach(function(item,index) {
+                        if (isActionOneDrinks) {
+                            item.innerHTML = itens[index];
+                        } else {
+                            item.innerHTML = '';
+                        }
+                    });
+
+                    isActionOneDrinks = !isActionOneDrinks;
+
+                });
+
+                let hobbies = document.querySelector('#hobbies');
+                hobbies.addEventListener('click', function () {
+                    let b5 = document.querySelectorAll('#b5 li');
+                    let itens = ['𑁯໋ watch series/movies', '𑁯໋ read', '𑁯໋ take pictures'];
+                    b5.forEach(function(item,index) {
+                        if (isActionOneHobbies) {
+                            item.innerHTML = itens[index];
+                        } else {
+                            item.innerHTML = '';
+                        }
+                    });
+
+                    isActionOneHobbies = !isActionOneHobbies;
+
+                });
+
+                let sports = document.querySelector('#sports');
+                sports.addEventListener('click', function () {
+                    let b6 = document.querySelectorAll('#b6 li');
+                    let itens = ['𑁯໋ volleyball', '𑁯໋ formula 1', '𑁯໋ basketball'];
+                    b6.forEach(function(item,index) {
+                        if (isActionOneSports) {
+                            item.innerHTML = itens[index];
+                        } else {
+                            item.innerHTML = '';
+                        }
+                    });
+
+                    isActionOneSports = !isActionOneSports;
+
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

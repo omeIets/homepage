@@ -1,0 +1,104 @@
+h1 {
+    font-size: 4vw;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#subtitle {
+    font-size: 2vw;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p.para {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1vw;
+    max-width: 600px;
+}
+
+#home {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#days {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4vw;
+}
+
+.externo {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.pochaco {
+    height: 280px;
+    margin-bottom: 0px;
+}
+
+.pochaco-intro {
+    height: 200px;
+}
+
+.intro-title {
+    font-size: 4vw;
+}
+
+#pochaco_likes {
+    height: 250px;
+}
+
+.rows {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 150px;
+    margin-bottom: 0px;
+}
+
+.lists {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2vw;
+    margin-top: 20px;
+}
+
+#pochaco-favs {
+    height:230px;
+}
+
+.favs-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:100px;
+    margin-bottom: 0px;
+}
+
+.fav-photos {
+    height:300px;
+}
+
+.favs-images {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.favs-txt {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.4vw;
+    margin-bottom: 60px;
+}
+
+

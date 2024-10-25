@@ -1,0 +1,35 @@
+HTML TAGS
+<script>
+<div>
+<button>
+<p>
+<h1>
+<h2>
+<strong>
+<ol>
+<li>
+<icon>
+<link>
+<img>
+
+CSS SELECTORS
+class
+id
+element
+element.class
+
+CSS PROPERTIES
+font-size
+font-family
+font-weight
+font-style
+max-width
+margin-top
+margin-bottom
+display
+text-align
+...
+
+
+I used JavaScript to make my buttons functional, add a day-counting function, and create a window alert.
+Additionally, I utilized Bootstrap to style my home and tabs buttons.
